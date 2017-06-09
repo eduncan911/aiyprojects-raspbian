@@ -25,6 +25,7 @@ import actionbase
 
 from actions import iss
 from actions import tunein
+from actions import youtube
 
 # =============================================================================
 #
@@ -292,6 +293,7 @@ def make_actor(say):
 
     iss.Register(say, actor)
     tunein.Register(say, actor)
+    youtube.Register(say, actor)
 
     return actor
 

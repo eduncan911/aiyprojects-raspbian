@@ -11,6 +11,8 @@ Usage:
 
     > "Hey Google, radio <station_name>"
 
+    And press the GPIO Button to stop.
+
 Examples:
 
     > "Hey Google, radio WNYC"
