@@ -23,6 +23,9 @@ from rgbxy import Converter
 
 import actionbase
 
+from actions import iss
+from actions import tunein
+
 # =============================================================================
 #
 # Hey, Makers!
@@ -286,6 +289,9 @@ def make_actor(say):
 
     actor.add_keyword(_('raspberry power off'), PowerCommand(say, 'shutdown'))
     actor.add_keyword(_('raspberry reboot'), PowerCommand(say, 'reboot'))
+
+    iss.Register(say, actor)
+    tunein.Register(say, actor)
 
     return actor
 
